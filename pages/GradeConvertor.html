@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+* @name: Assignement1
+* @Course Code: SODV1201
+* @class: Introduction to Web Programming
+* @author: Elizabeth Handerson
+* @Description: Grade Convertor web page
+-->
+<html>
+
+    <!--This is the primary title for the page-->
+
+    <header align="center"><h1>Elizabeth Handerson - Grade Convertor</h1></header>
+    <head>
+
+        <!--This specifies which style sheet to be used and set the title for the browser tab-->
+
+		<link rel="stylesheet" href="../css/style.css"">
+        <title>Grade Convertor</title>        
+    </head>
+
+    <!--This specifies which JavaScript file is being used-->
+
+    <script src="../js/app.js"></script>
+    <body class="body">  
+
+        <!--This section sets up the navigation for the web application-->
+
+        <header style="text-align: center;">
+            <nav>                
+                <a href="../Index.html" title="Information about Elizabeth Handerson" tabindex="1">Homepage</a>
+                <a href="../pages/StaffInformation.html" title="Staff Information" tabindex="2">Staff Info</a>
+                <a href="../pages/TempConvertor.html" title="Temperature Convertor" tabindex="3">Temperature</a>
+            </nav>
+        </header>
+
+        <!--This section is the main body of information for the page-->
+        <!--user instrctions for the page-->
+        <p>
+            Please enter a grade by number in the box below, and press the "Letter Grade" button to get find out what letter your grade value is awarded.
+
+        </p>
+
+        <!--Area tagged for providing error messages back to the user-->
+        <div id='validationMessage' class='validationMessage'></div> 
+        
+        <!--Body of the page-->
+        <article class="article">
+
+            <!--Input area for the user-->
+            <label for='txt_mark' class='label'>Please enter your grade to find out </label>
+            <input id='txt_mark'></input>
+            
+            <br/><br/>
+            
+            <button id='btnGrade' width='50' onclick='MarkToGrad()'>Letter Grade</button>
+
+
+            <br/><br/>
+
+                <!--This area is for feedback on the marks that the user earned-->
+                <textarea id='markInfo' name='messageDisplay' class='textarea' rows="10" cols="30"></textarea> 
+
+            <br/><br/>
+        </article>
+
+        <!--This section sets up the footer information which holds the copyright information-->    
+         
+        <footer class="footer">
+            <!-- copyright information -->
+            &copy;2023 Handerson
+        </footer> 
+    </body>
+</html>

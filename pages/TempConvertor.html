@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+* @name: Assignement1
+* @Course Code: SODV1201
+* @class: Introduction to Web Programming
+* @author: Elizabeth Handerson
+* @Description: Grade Convertor web page
+-->
+<html>
+    
+    <!--This is the primary title for the page-->
+
+    <header align="center"><h1>Elizabeth Handerson - Temperature Convertor</h1></header>
+    <head>
+
+        <!--This specifies which style sheet to be used and set the title for the browser tab-->
+
+		<link rel="stylesheet" href="../css/style.css"">
+        <title>Temperature Convertor</title>        
+    </head>
+
+    <!--This specifies which JavaScript file is being used-->
+
+    <script src="../js/app.js"></script>
+    <body class="body">  
+
+        <!--This section sets up the navigation for the web application-->
+
+        <header style="text-align: center;">
+            <nav>                
+                <a href="../Index.html" title="Information about Elizabeth Handerson" tabindex="1">Homepage</a>
+                <a href="../pages/StaffInformation.html" title="Staff Information" tabindex="2">Staff Info</a>
+                <a href="../pages/GradeConvertor.html" title="Grade to Letter Convertor" tabindex="3">Grades</a>
+            </nav>
+        </header>
+
+        <!--This section is the main body of information for the page-->
+
+        <article class="article">
+
+            <!-- 
+            *   Bulding a table to allow the user a series of easy conversions by entering the temperature in one base to view it in another base
+            *   the user only has to enter the base measurement in the first box, when leaving the first box, the second populates with the desired
+            *   temperature
+            -->
+            <table class='table'>
+                <tr>
+                    <td class='td'>
+                        Convert from Celsius
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_celToFahr" width="35" onchange="celToFahr()"></input>
+                    </td>
+                    <td class='td'>
+                        to Fahrenheit
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_fahrFromCel" width="35"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='td'>
+                        Convert from Fahrenheit
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_fahrToCel" width="35" onchange="fahrToCel()"></input>
+                    </td>
+                    <td class='td'>
+                        to Celsius
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_celFromFahr" width="35"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='td'>
+                        Convert from Kelvin
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_kelToCel" width="35" onchange="kelToCel()"></input>
+                    </td>
+                    <td class='td'>
+                        to Celsius
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_celFromKel" width="35"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='td'>
+                        Convert from Celsius
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_celToKel" width="35" onchange="celToKel()"></input>
+                    </td>
+                    <td class='td'>
+                        to Kelvin
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_kelFromCel" width="35"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='td'>
+                        Convert from Kelvin
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_kelToFahr" width="35" onchange="kelToFahr()"></input>
+                    </td>
+                    <td class='td'>
+                        to Fahrenheit
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_fahrFromKel" width="35"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='td'>
+                        Convert from Fahrenheit
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_fahrToKel" width="35" onchange="fahrToKel()"></input>
+                    </td>
+                    <td class='td'>
+                        to Kelvin
+                    </td>
+                    <td class='td'>
+                        <input type="text" id="int_kelFromFahr" width="35"></input>
+                    </td>
+                </tr>
+            </table>
+            <br/><br/>
+        </article>    
+
+        <!--This section sets up the footer information which holds the copyright information-->
+
+        <footer class="footer">
+            <!-- copyright information -->
+            &copy;2023 Handerson
+        </footer> 
+    </body>
+</html>

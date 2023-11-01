@@ -1,0 +1,189 @@
+/**
+* @name: Assignement1
+* @Course SODV1201
+* @class: Introduction to Web Programming
+* @author: Elizabeth Handerson
+* @description: Stylesheet source page
+* 
+* The different sections of hte css page will correlate to the 
+* different calls throughout the HTML and JavaScript pages
+*/
+
+.body {
+    min-height: 100vh;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.footer { 
+    margin-top: auto;
+    font-weight: bold;
+    font-size: 10px;    
+    bottom: 25px;
+    width: 100%;
+    height: 60px;  /*Height of the footer*/
+    text-align: center;
+
+ }
+
+.input {
+    width: 450px;
+    
+    border: 1px solid #666;
+    color: #079ffd;
+    font-size: medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkblue;
+    border-spacing: 0px;    
+}
+
+.noHover {
+    pointer-events: none;
+}
+
+th:hover {
+    background-color: #0078B3;
+}
+
+.th{
+    font-weight: bold;
+    color: #ff8c00;
+    text-align: left;
+
+    border-bottom: 2px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+.td {
+    
+    color: royalblue;
+}
+
+.label {
+    display:inline-flex;
+    width: 250px;
+
+    font-size: medium;    
+    color: firebrick;
+
+}
+
+.article {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.description {
+    display:inline-flex;
+    width: 450px;
+
+    font-size: medium;    
+    color: firebrick;
+}
+
+.center {
+
+    align-items: center;
+}
+
+.h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.validationMessage {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkmagenta;
+    
+}
+
+.width75{ 
+    width: 75%;
+    
+}
+.textarea {
+    border-style: none;
+
+}
+
+.wrapper {
+    display: grid;
+    
+
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: firebrick;
+
+    gap: 10px;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: repeat(5, auto);
+}
+
+.one {
+    grid-column: 1 ;
+    grid-row: 1;
+  }
+
+.two {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+.three {
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+.four {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    color:darkblue;
+}
+.five {
+    grid-column: 1 / 4;
+    grid-row: 5;
+    color:darkmagenta;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+nav a{ 
+    display: block;
+    padding: 15px;
+    margin: 0;  
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(57, 176, 179);
+    color: #662e0c;
+}
+
+nav :hover{
+    background-color: rgb(107, 1253, 255);
+    color: #b36739;
+}
+

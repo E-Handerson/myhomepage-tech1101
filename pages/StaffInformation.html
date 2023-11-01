@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+* @name: Assignement1
+* @Course Code: SODV1201
+* @class: Introduction to Web Programming
+* @author: Elizabeth Handerson
+* @Description: Staff Information web page
+-->
+<html>
+
+    <!--This is the primary title for the page-->
+
+    <header align="center"><h1>Elizabeth Handerson - Staff Information</h1></header>
+    <head>
+		<link rel="stylesheet" href="../css/style.css"">
+        <title>Grade Convertor</title>        
+    </head>
+
+    <!--This specifies which style sheet to be used and set the title for the browser tab-->
+
+    <script src="../js/app.js">
+        onload();
+    </script>
+    <body onload="listStaff()" class="body">  
+       
+        <!--This section sets up the navigation for the web application-->
+
+        <header style="text-align: center;">
+            <nav>                
+                <a href="../Index.html" title="Information about Elizabeth Handerson" tabindex="1">Homepage</a>
+                <a href="../pages/GradeConvertor.html" title="Grade to Letter Convertor" tabindex="2">Grades</a>
+                <a href="../pages/TempConvertor.html" title="Temperature Convertor" tabindex="3">Temperature</a>
+            </nav>
+        </header>
+       
+         <!--This section is the main body of information for the page-->
+
+        <article>
+            <div id='staffList'></div>
+            <br/><br/>
+        </article>   
+
+        <!--This section sets up the footer information which holds the copyright information--> 
+        
+        <footer class="footer">
+            <!-- copyright information -->
+            &copy;2023 Handerson
+        </footer> 
+    </body>
+</html>
